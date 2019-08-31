@@ -1,6 +1,7 @@
 package com.agtech.warehouse.domain;
 
 import java.util.Date;
+import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -103,6 +104,62 @@ public class Product implements IProduct {
 
 	public void setExpDate(Date expDate) {
 		ExpDate = expDate;
+	}
+
+
+	@Override
+	public void create(String name, Double price, String company, Date expdt) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	public void delete(Long id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+	@Override
+	public boolean update(Long id, Product prd) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+
+	@Override
+	public Product read(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	@Override
+	public List<Product> getProductById(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	@Override
+	public List<Product> getProductByName(String name) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	@Override
+	public List<Product> sortProductByCompany() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	@Override
+	public List<Product> sortProductByPrice() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 	
 	
