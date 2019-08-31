@@ -8,6 +8,8 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
@@ -39,6 +41,7 @@ public class Product implements IProduct {
 	
 	@NotNull
 	@Column(unique=true)
+	@Temporal(TemporalType.DATE)
 	private Date ExpDate;
 	
 	
@@ -136,31 +139,89 @@ public class Product implements IProduct {
 
 
 	@Override
-	public List<Product> getProductById(Long id) {
+	public List<Product> getProductsById(Long id) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 
 	@Override
-	public List<Product> getProductByName(String name) {
+	public List<Product> getProductsByName(String name) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 
 	@Override
-	public List<Product> sortProductByCompany() {
+	public List<Product> getProductsByExpDate() {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 
 	@Override
-	public List<Product> sortProductByPrice() {
+	public List<Product> getProductsByPrice(Double price) {
 		// TODO Auto-generated method stub
 		return null;
 	}
+
+
+	@Override
+	public List<Product> getAll() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	@Override
+	public List<Product> sortProductsByCompanyReverse() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	@Override
+	public List<Product> sortProductsByPriceReverse() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	@Override
+	public List<Product> sortProductsByExpDateReverse() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	@Override
+	public List<Product> sortProductsByIdReverse() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	@Override
+	public List<Product> findAllProductsExpDateBetween(String name, Date ExpDateStart, Date ExpDateEnd) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	@Override
+	public List<Product> findAllProductsPriceBetween(String name, Double priceStart, Double priceEnd) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
+	@Override
+	public List<Product> findAllWithExpDate(String name, Date expirationDate) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+
 	
 	
 }
