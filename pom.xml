@@ -71,8 +71,8 @@
 
 					<!-- Needed if pushing to DockerHub: preferred to store these in local 
 						environment (see the course) -->
- 					<authConfig> <username>2964</username> <password>biG123City</password> 
-						</authConfig>
+<!--  					<authConfig> <username>2964</username> <password>biG123City</password> 
+						</authConfig> -->
 
 					<images>
 						<image>
