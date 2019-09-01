@@ -76,7 +76,7 @@
 
 					<images>
 						<image>
-							<name>warehouse-service-deploy</name>
+							<name>2964/warehouse-service-deploy</name>
 							<build>
 								<dockerFileDir>${project.basedir}/src/main/docker/</dockerFileDir>
 
