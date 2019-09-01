@@ -8,4 +8,4 @@ WORKDIR /usr/local/bin
 
 COPY maven/warehouse-0.0.1-SNAPSHOT.jar warehouse-service.jar
 
-CMD ["java", "-jar", "warehouse.jar"]
+CMD ["java", "-jar", "warehouse-service.jar"]
