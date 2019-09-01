@@ -1,4 +1,4 @@
-FROM openjdk: 8u131-jdk-alpine
+FROM openjdk:8u131-jdk-alpine
 
 MAINTAINER sohrab azami "contact@gmail.com"
 
@@ -6,6 +6,6 @@ EXPOSE 8080
 
 WORKDIR /usr/local/bin
 
-COPY maven/warehouse-0.0.1-SNAPSHOT.jar warehouse.jar
+COPY maven/warehouse-0.0.1-SNAPSHOT.jar warehouse-service.jar
 
 CMD ["java", "-jar", "warehouse.jar"]
